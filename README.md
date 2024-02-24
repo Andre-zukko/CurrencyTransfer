@@ -38,3 +38,9 @@ Návod k spustenie📜:
 
 <img width="275" alt="PlayButton" src="https://github.com/Andre-zukko/CurrencyTransfer/assets/145490579/e75afeb3-8af1-4af3-af48-c4506bc73d87">
 
+
+Náhľad Aplikácie:
+
+
+https://github.com/Andre-zukko/CurrencyTransfer/assets/145490579/5905cf6f-0da3-434c-b322-50cb96be6a3b
+
