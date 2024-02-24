@@ -17,11 +17,14 @@ Dlžka developmentu: 1 hodina⏱️
 Návod k spustenie📜:
 
 1. Zkopíruj GitHub repo link
+
+<img width="491" alt="CopyLink" src="https://github.com/Andre-zukko/CurrencyTransfer/assets/145490579/fcd5cd77-718a-4271-879d-ed931fccbfc8">
+
 2. Otvor Xcode
    
    <img width="491" alt="Xcode" src="https://github.com/Andre-zukko/CurrencyTransfer/assets/145490579/4e757bd4-562b-4355-8f57-a256ba43c1cc">
    
-4. Klikni "Kopírovať existujúci projekt"
+3. Klikni "Kopírovať existujúci projekt"
 
 <img width="497" alt="CloneProject" src="https://github.com/Andre-zukko/CurrencyTransfer/assets/145490579/ff0c0a34-4d1e-4bb1-bf90-cbb18c5806cc">
 
