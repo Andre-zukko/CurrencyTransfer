@@ -48,34 +48,37 @@ struct ContentView: View {
     }
     
     var body: some View {
-        Form{
-            Section(header: Text("Konvertovať meny")) {
-                    TextField("Zadajte sumu", text: $amount)
-                    .keyboardType(.decimalPad)
-                    
-                Picker(selection: $firstItem, label: Text("Z")) {
-                    ForEach(currencies.indices, id: \.self) { index in
-                        Text(self.currencies[index]).tag(index)
+        NavigationStack {
+            Form{
+                Section(header: Text("Konvertovať meny")) {
+                        TextField("Zadajte sumu", text: $amount)
+                        .keyboardType(.decimalPad)
+                        
+                    Picker(selection: $firstItem, label: Text("Z")) {
+                        ForEach(currencies.indices, id: \.self) { index in
+                            Text(self.currencies[index]).tag(index)
+                        }
+                    }
+                    Picker(selection: $secondItem, label: Text("Na")) {
+                        ForEach(currencies.indices, id: \.self) { index in
+                            Text(self.currencies[index]).tag(index)
+                        }
                     }
                 }
-                Picker(selection: $secondItem, label: Text("Na")) {
-                    ForEach(currencies.indices, id: \.self) { index in
-                        Text(self.currencies[index]).tag(index)
-                    }
+                
+                Section(header: Text("Konverzia")) {
+                    Text("\(convert(amount)) \(currencies[secondItem])") // Výstup konverzie
                 }
+                
             }
-            
-            Section(header: Text("Konverzia")) {
-                Text("\(convert(amount)) \(currencies[secondItem])") // Výstup konverzie
-            }
-            
+            .navigationTitle("Menová Kalkulačka💶")
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+            ContentView()
     }
 }
 
